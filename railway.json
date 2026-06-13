@@ -1,0 +1,12 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "RAILPACK",
+    "buildCommand": "mvn -B -DskipTests clean package -pl erp-admin -am"
+  },
+  "deploy": {
+    "startCommand": "java -Dserver.port=$PORT -jar erp-admin/target/erp-admin-1.0.0.jar",
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 3
+  }
+}
