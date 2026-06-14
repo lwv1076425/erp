@@ -1,0 +1,8 @@
+**/target/
+**/node_modules/
+**/.git/
+**/.idea/
+**/.vscode/
+**/erp-ui/
+*.md
+.gitignore
